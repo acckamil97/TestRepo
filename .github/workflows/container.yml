@@ -1,0 +1,11 @@
+name: container
+on:
+  workflow_dispatch:
+jobs:
+  container-test-job:
+    runs-on: ubuntu-latest
+    container:
+      image: salesforce/salesforcedx
+    steps:
+      - name: Check for dockerenv file
+        run: sfdx --version
