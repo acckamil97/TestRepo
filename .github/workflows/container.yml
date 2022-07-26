@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   container-test-job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     container:
       image: allanoricil/sfdx-cli:v2
     steps:
