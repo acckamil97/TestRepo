@@ -5,7 +5,7 @@ jobs:
   container-test-job:
     runs-on: ubuntu-latest
     container:
-      image: salesforce/salesforcedx
+      image: allanoricil/sfdx-cli:v2
     steps:
       - name: Check for dockerenv file
         run: sfdx --version
